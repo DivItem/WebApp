@@ -1,22 +1,3 @@
-//preloder
-$(".fakeloader").fakeLoader({
-
-  //Time in milliseconds for fakeLoader disappear
-  timeToHide:1500, 
-  
-  //'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
-  spinner:"spinner2",//Options: 
-  
-  //Background color. Hex, RGB or RGBA colors
-  bgColor:"#009000",
-  
-  });
-      
-      $(window).load(function(){
-    $('#preloader').fadeOut('slow',function(){$(this).remove();});
-  });
-
-  
 //Menu Sticky When Scroll Bottom & Top.
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
