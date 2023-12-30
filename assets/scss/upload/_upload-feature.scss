@@ -1,0 +1,80 @@
+.upload-feature-area {
+    background-image: url("../image/upload-bg.jpg");
+    @include bg-img;
+    padding: 155px 0;
+    margin-bottom: 20px;
+}
+.upload-single-feature {
+    background-color: $section-bg;
+    padding: 65px 20px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    transition: all .3s;
+    span {
+        font-size: 65px;
+        color: $icon-color;
+    }
+    h6 {
+        color: #fff;
+        font-size: 20px;
+        font-family: Mona-Sans;
+        font-weight: 500;
+        background: #EE5859;
+        padding: 4px 12px 6px 12px;
+        border-radius: 16px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+    }
+    h4 {
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 7px;
+    }
+}
+.upload-single-feature:hover {
+    margin: 6px 0;
+}
+
+@media (min-width: 1200px) {
+    
+}
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+    .upload-feature-area {
+        padding: 100px 0;
+    }
+    .upload-single-feature {
+        padding: 50px 5px;
+        h4 {
+            font-size: 25px;
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .upload-feature-area {
+        padding: 70px 0;
+    }
+    .upload-single-feature {
+        padding: 40px 10px;
+        h4 {
+            font-size: 18px;
+        }
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    .upload-feature-area {
+        padding: 30px 0;
+    }
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .upload-feature-area {
+        background-image: none;
+        padding: 30px 0;
+    }
+  }
+  

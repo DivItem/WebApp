@@ -1,0 +1,103 @@
+.discover-area .col-md-4 {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.discover-area {
+    @include new-section;
+    .section-heading {
+        @include section-heading-h2;
+    }
+
+    .daily-life-feature {
+        min-height: 412px;
+        border-radius: 10px;
+        margin: 10px 0;
+        transition: all .3s;
+        @include verCenter-parent;
+        a {
+            @include verCenter-child;
+            font-family: Mona-Sans;
+            color: $primary-color;
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+            transition: all .3s;
+        }
+        
+    }
+    .daily-life-feature:hover {
+        transform: scale(1.04);
+    }
+    .daily-life-feature:hover a {
+        color: $secondary-color;
+    }
+    .feature-1 {
+        background-image: url("../image/discover-1.jpg");
+        @include bg-img;
+    }
+    .feature-2 {
+        background-image: url("../image/discover-2.jpg");
+        @include bg-img;
+    }
+    .feature-3 {
+        background-image: url("../image/discover-3.jpg");
+        @include bg-img;
+    }
+    .feature-4 {
+        background-image: url("../image/discover-4.jpg");
+        @include bg-img;
+    }
+    .feature-5 {
+        background-image: url("../image/discover-5.jpg");
+        @include bg-img;
+    }
+    .feature-6 {
+        background-image: url("../image/discover-6.jpg");
+        @include bg-img;
+    }
+    .feature-7 {
+        background-image: url("../image/discover-7.jpg");
+        @include bg-img;
+    }
+    .feature-8 {
+        background-image: url("../image/discover-8.jpg");
+        @include bg-img;
+    }
+    .feature-9 {
+        background-image: url("../image/discover-9.jpg");
+        @include bg-img;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .discover-area .daily-life-feature {
+        min-height: 300px;
+    }
+}
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+    .discover-area .daily-life-feature {
+        min-height: 250px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .discover-area .daily-life-feature {
+        min-height: 200px;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    .discover-area .daily-life-feature {
+        min-height: 300px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .discover-area .section-heading {
+        font-size: 30px;
+    }
+    .discover-area .daily-life-feature {
+        min-height: 280px;
+        a {
+            font-size: 22px;
+        }
+    }
+}

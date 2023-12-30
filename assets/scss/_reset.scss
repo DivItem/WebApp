@@ -1,0 +1,88 @@
+@import "./colors";
+*, body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $body-bg;
+}
+html {
+    scroll-behavior: smooth;
+}
+.row {
+    --bs-gutter-y: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Mona-Sans;
+    color: $primary-color;
+}
+p, span{
+    font-family: Helvetica;
+    font-size: 16px;
+    color: $primary-color;
+}
+ul, p, a {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 16px;
+    color: $primary-color;
+    transition: all .3s;
+}
+img {
+    width: 100%;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 5%;
+}
+.sp-70 {
+    padding: 70px 0;
+}
+.mb-mt-20 {
+    margin: 20px 0;
+}
+.mb-mt-30-20 {
+    margin: 30px 0 20px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.pt-pb-30 {
+    padding: 30px 0;
+}
+
+
+.new-section {
+    padding: 50px 0;
+}
+.section-heading-h2 {
+    text-align: center;
+    font-family: Mona-Sans;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.section-heading-p {
+    font-family: Mona-Sans;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    .section-details h2, .section-details h2 span {
+        font-size: 30px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .section-details h2, .section-details h2 span {
+        font-size: 26px;
+    }
+}

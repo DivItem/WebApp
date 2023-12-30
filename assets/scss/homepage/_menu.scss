@@ -1,0 +1,121 @@
+.main_menu_area {
+    background-color: $section-bg;
+    padding: 15px 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    .form-control {
+        color: $primary-color;
+        background-color:$body-bg;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 20px 11px;
+    }
+    .form-control:focus {
+        box-shadow: none;
+    }
+}
+a.nav-link {
+    font-family: Helvetica;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 30px !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link, a.nav-link:hover {
+    color: $secondary-color;
+}
+.navbar-brand {
+    color: $secondary-color;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.navbar-brand:hover {
+    color:$secondary-color;
+    opacity: .9;
+}
+a.nav-link.join-btn {
+    background-color: $secondary-color;
+    border-radius: 20px;
+    padding: 10px 30px !important;
+    text-align: center;
+    transition: all .3s;
+}
+a.nav-link.join-btn:hover {
+    color: $primary-color;
+    opacity: .9;
+}
+.navbar-toggler {
+    line-height: 1;
+    border: 2px solid $secondary-color;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    width: 22px;
+    height: 2px;
+    background-image: none;
+    background-color: $secondary-color;
+    margin: 5px 0;
+    display: block;
+}
+.nav-link:focus{
+    color: $primary-color;
+}
+/* sticky navber */
+.sticky {
+    position: sticky;
+    top: -200px; 
+    z-index: 100;
+    transition: all .5s;
+}
+.sticky-scroll {
+    top: 0; 
+    z-index: 100;
+    position: sticky;
+    transition: all .5s;
+}
+
+@media (min-width: 1201px) {
+    a.nav-link {
+        padding: 9px 20px !important;
+    }
+}
+@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+    a.nav-link {
+        font-size: 15px;
+        padding: 9px 11px !important;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    a.nav-link {
+        text-align: center;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    a.nav-link {
+        text-align: center;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .main_menu_area {
+        padding: 5px 0;
+        .navbar-brand {
+            font-size: 25px;
+        }
+        a.nav-link {
+            text-align: center;
+        }
+        a.nav-link.join-btn {
+            padding: 8px 30px !important;
+        }
+        .form-control {
+            padding: 5px 20px 7px;
+        }
+    }
+}

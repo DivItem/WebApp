@@ -1,0 +1,90 @@
+.block-area {
+    padding: 70px 0;
+    .section-details {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #7D7D7D;
+    }
+}
+.block-contant {
+    background-color: $section-bg;
+    max-width: 425px;
+    margin: 60px auto 0;
+    padding: 50px 60px;
+    border-radius: 10px;
+    p.content-heading {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    .contant-link {
+        a {
+            padding: 6px 0 !important;
+            display: block;
+            position: relative;
+        }
+        a:hover {
+            color: $hover-color;
+        }
+        a:before {
+            position: absolute;
+            left: -15px;
+            top: 15px;
+            content: " ";
+            background: $primary-color;
+            height: 5px;
+            width: 5px;
+            border-radius: 5pc;
+        }
+
+    }
+    .block-Confirm {
+        text-align: center;
+        margin-top: 60px;
+        button.submit-btn {
+            color: #fff;
+            font-family: Helvetica;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 8px 15px;
+            border: 1px solid $secondary-color;
+            background-color: transparent;
+            width: 117px;
+            margin: 0 15px;
+            border-radius: 20px;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+        button.submit-btn.active, button.submit-btn:hover {
+            background-color: $secondary-color;
+        }
+        button.submit-btn:hover, button.submit-btn.active:hover {
+            opacity: .9;
+        }
+
+    }
+
+    
+    
+
+
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .block-contant {
+        max-width: 425px;
+        padding: 50px 40px;
+        p.content-heading {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .block-Confirm button.submit-btn {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 3px;
+            width: 92px;
+            margin: 0 6px;
+        }
+    }
+
+
+
+}

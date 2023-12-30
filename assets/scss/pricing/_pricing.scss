@@ -1,0 +1,105 @@
+.pricing-area {
+    @include new-section;
+    background-image: url("../image/pricing-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin-bottom: -27px;
+}
+.row.pricing-feature {
+    padding: 70px 0 50px;
+}
+.section-details {
+    padding-bottom: 30px;
+    h2 {
+        @include section-heading-h2;
+        padding-bottom: 10px;
+        span {
+            color: $secondary-color;
+            font-size: 40px;
+        }
+    }
+    p {
+        @include section-heading-p;
+    }
+}
+.single-pricing {
+    padding: 65px 105px;
+    h4 {
+        font-size: 35px;
+        color: $secondary-color;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+    .single-pricing {
+        padding: 50px 30px;
+    }
+    .upload-single-feature {
+        padding: 50px 20px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .single-pricing {
+        padding: 50px 30px;
+    }
+    .upload-single-feature {
+        padding: 28px 10px;
+    }
+    .upload-single-feature span {
+        font-size: 48px;
+    }
+    .upload-single-feature h6 {
+        font-size: 16px;
+        padding: 4px 12px 6px 12px;
+        top: 20%;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+    .pricing-area {
+        background-image: none;
+        margin-bottom: 0;
+    } 
+    .row.pricing-feature {
+        padding: 30px 0 0;
+        border-top: 1px solid $section-bg;
+        margin-top: 30px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .section-details h2, .section-details h2 span {
+        line-height: 42px;
+    }
+    .pricing-area {
+        background-image: none;
+        margin-bottom: 0;
+    }
+    .single-pricing {
+        padding: 30px 10px;
+    }
+    .row.pricing-feature {
+        padding: 30px 0 0;
+        border-top: 1px solid $section-bg;
+        margin-top: 30px;
+    }
+    .upload-single-feature {
+        padding: 28px 10px;
+    }
+    .upload-single-feature span {
+        font-size: 35px;
+    }
+    .upload-single-feature h6 {
+        font-size: 16px;
+        padding: 0;
+        top: 15%;
+        height: 28px;
+        width: 30px;
+        line-height: 27px;
+    }
+    .upload-single-feature h4 {
+        font-size: 20px;
+    }
+}
