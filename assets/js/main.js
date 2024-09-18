@@ -9,30 +9,46 @@ window.addEventListener('scroll', function() {
 });
 
 //Bottom To Top Button
-const button = document.querySelector('.b2t-btn');
-const displayButton = () => {
-  window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-  
-    if (window.scrollY > 100) {
-      button.style.display = "block";
+var btn = $('.b2t-btn');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
     } else {
-      button.style.display = "none";
+      btn.removeClass('show');
     }
   });
-};
-const scrollToTop = () => {
-  button.addEventListener("click", () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    }); 
-    console.log(event);
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
   });
-};
-displayButton();
-scrollToTop();
+
+
+// const button = document.querySelector('.b2t-btn');
+// const displayButton = () => {
+//   window.addEventListener('scroll', () => {
+//     console.log(window.scrollY);
+  
+//     if (window.scrollY > 100) {
+//       button.style.display = "block";
+//     } else {
+//       button.style.display = "none";
+//     }
+//   });
+// };
+// const scrollToTop = () => {
+//   button.addEventListener("click", () => {
+//     window.scroll({
+//       top: 0,
+//       left: 0,
+//       behavior: 'smooth'
+//     }); 
+//     console.log(event);
+//   });
+// };
+// displayButton();
+// scrollToTop();
 
 
 
